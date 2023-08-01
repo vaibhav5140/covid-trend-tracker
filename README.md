@@ -96,13 +96,17 @@ This is our cost-Function, and we have to somehow reach the red-point from
 where we will find parameters (slope, intercept) which will give us the efficient
 line of our predictive model with least error.<br>
 Now how we go from any given point towards the red-point?<br>
-<img src="https://github.com/vaibhav5140/covid-trend-tracker/assets/85643531/e8261156-217f-4d64-9183-abaa12e08d9c" align="centre" height ="225" width="370" ><br>
+<img src="https://github.com/vaibhav5140/covid-trend-tracker/assets/85643531/c70ad972-3518-4cb5-999b-67fe63139cde" align="centre" height ="225" width="370" ><br>
+
+
 
 Let ‘b’ be some parameter, then we have move in such a way that while
 approaching towards the red-point our step should be smaller compared to
 when we are far from it.<br>
 So how we have to move:<br>
-<img src="https://github.com/vaibhav5140/covid-trend-tracker/assets/85643531/0049c431-b751-4f00-bb64-b5803cd1f2a5" align="centre" height ="225" width="370" ><br>
+
+<img src="https://github.com/vaibhav5140/covid-trend-tracker/assets/85643531/a305cb7a-8837-4123-956d-a80227598e34" align="centre" height ="225" width="370" ><br>
+
 
 As we have two parameters so partial differentiation is done by which we are
 moving opposite to the gradient of cost function to get the minima of that
@@ -117,7 +121,8 @@ Each iteration will update m and b to a line that yields slightly lower error th
 the previous iteration. The direction to move in for each iteration is calculated
 using the two partial derivatives from above.<br>
 
-<img src="https://github.com/vaibhav5140/covid-trend-tracker/assets/85643531/bb9cb8f9-ef13-456e-9d1b-d9da2397d41a" align="centre" height ="225" width="370" ><br>
+<img src="https://github.com/vaibhav5140/covid-trend-tracker/assets/85643531/3a3775ea-212d-408c-a9f7-f1ef62c9214e" align="centre" height ="225" width="370" ><br>
 
 So, the line with slope as 2 and intercept as 3(approx.) will be the predictive
 model for covid data-set we took as an example.
+
